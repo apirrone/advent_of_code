@@ -1,0 +1,1 @@
+print(max([sum(list(map(int, i.split('\n')))) for i in open('input.txt', 'r').read().split('\n\n')[:-1]]))
