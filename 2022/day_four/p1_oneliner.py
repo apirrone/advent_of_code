@@ -1,0 +1,1 @@
+print(sum([p[0].issubset(p[1]) or p[1].issubset(p[0]) for p in [(lambda p : [set([a for a in range(p[0][0], p[0][1]+1)]), set([a for a in range(p[1][0], p[1][1]+1)])])(p) for p in [p for p in [[list(map(int, p.split('-'))) for p in d.split(',')] for d in [d for d in open("input.txt", 'r').read().split('\n')[:-1]]]]]]))
